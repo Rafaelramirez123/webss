@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Página del Médico</title>
+    <style>
+        body {
+            background-color: #dfe6ec;
+        }
+        .header {
+            background-image: url(img/3.png);
+            color: black;
+            padding: 100px ;
+            text-align: center;
+            background-position: center;
+            background-size: cover;
+            
+        }
+        .header img {
+            width: 100px; /* Ajusta el tamaño del logotipo */
+            border-radius: 50%;
+        }
+        .description {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: white;
+        }
+
+        .service-link {
+        color: #343a40;
+        text-decoration: none;
+        padding: 10px; /* Espacio alrededor del enlace */
+        display: block; /* Hace que el enlace ocupe todo el espacio */
+        transition: color 0.3s ease; /* Transición suave */
+    }
+
+    .service-link:hover {
+        background-color: #343a40; /* Color de fondo al pasar el ratón */
+        color: white; /* Cambia el color del texto al pasar el ratón */
+        transition: background-color 0.3s ease; /* Transición suave */
+
+    .service-img {
+        width: 100%; /* Tamaño de la imagen */
+        height: auto; /* Mantiene la proporción */
+        border: 2px solid #343a40; /* Borde elegante */
+        border-radius: 5px; /* Bordes redondeados */
+        margin-right: 10px; /* Espacio entre la imagen y el texto */
+        transition: transform 0.3s ease; /* Transición suave al hover */
+        display: block;
+    }
+
+    .service-item:hover .service-img {
+        transform: scale(1.1); /* Aumenta el tamaño de la imagen al hacer hover */
+    }
+
+    .service-item:hover {
+        background-color: #343a40; /* Cambia el color de fondo al hacer hover */
+    }
+
+    .service-item {
+        display: flex;
+        align-items: center; /* Centra la imagen y el texto verticalmente */
+        justify-content: center; /* Centra el contenido horizontalmente */
+        text-align: center; /* Centra el texto */
+        background-color: #5b5e61; /* Color de fondo */
+        color: #343a40; /* Color del texto */
+        border-radius: 20px;
+    }
+
+    /*agregando colores para los estilos del cards*/
+
+    .service-card {
+    margin-bottom: 20px; /* Espacio entre las cards */
+    transition: transform 0.2s; /* Efecto de transición */
+}
+
+.service-card:hover {
+    transform: scale(1.05); /* Efecto hover */
+}
+
+.service-img {
+    width: 100%; /* Asegura que la imagen ocupa todo el ancho */
+    height: 100%; /* Altura fija para todas las imágenes */
+    object-fit: cover; /* Mantiene la relación de aspecto */
+    border-top-left-radius: 0.25rem; /* Bordes redondeados */
+    border-top-right-radius: 0.25rem; /* Bordes redondeados */
+}
+
+.card {
+    transition: transform 0.3s, box-shadow 0.3s; /* Transiciones suaves */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Eleva la card hacia arriba */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Sombra más profunda */
+}
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <img src="img/logotipo.png" alt="Logotipo del Médico"> <!-- Cambia 'logo.png' por la URL de tu logotipo -->
+        <h1></h1>
+        <p></p>
+      
+    </header>
+    
+
+    <!--creando los servicios que ofrecemos-->
+    <div class="container mt-4 ">
+        <h2 class="text-center">Servicios Ofrecidos</h2>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card-group">
+                    <div class="card service-link service-card service-img">
+                        <img src="img/consultas medicas.png" class="card-img-top" alt="consultas_medicas">
+                        <div class="card-body">
+                            <h5 class="card-title">Consultas Médicas</h5>
+                            <p class="card-text">Este es un servicio de consultas médicas con atención personalizada.</p>
+                            
+                            <!--creando los botones-->
+                            <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                <button type="button" class="btn btn-outline-primary">Crear Consulta</button>
+                                <button type="button" class="btn btn-outline-primary">Reagendar Consulta</button>
+                                <button type="button" class="btn btn-outline-primary">Eliminar Consulta</button>
+                              </div>
+                            
+                        </div>
+                    </div>
+                    <div class="card service-link service-card service-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXo2C_MJOgon9c_cQ5osWCYH62RRtf7hHpmw&s" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Chequeos de Salud</h5>
+                            <p class="card-text">Chequeos completos para mantener tu salud en óptimas condiciones.</p>
+                            <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                <button type="button" class="btn btn-outline-primary">Crear chequeo</button>
+                                <button type="button" class="btn btn-outline-primary">Reagendar chequeo</button>
+                                <button type="button" class="btn btn-outline-primary">Eliminar chequeo</button>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="card service-link service-card service-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFAPojyRXsxxN4o9mRIWszoDnSE2cZgy7Y8g&s" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Tratamientos Personalizados</h5>
+                            <p class="card-text">Ofrecemos tratamientos ajustados a las necesidades de cada paciente.</p>
+                            <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                <button type="button" class="btn btn-outline-primary">Agendar Tratamiento</button>
+                                <button type="button" class="btn btn-outline-primary">Consultar Tratamiento</button>
+                                <button type="button" class="btn btn-outline-primary">Reagendar Tratamiento</button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="card-group">
+                    <div class="card service-link service-card service-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREmr_gumeKkXhDLKYWFwCbqFHcl1yiHVRAxA&s" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Cardiologia</h5>
+                            <p class="card-text">Ofrecemos tratamientos ajustados a las necesidades de cada paciente.</p>
+                            <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                <button type="button" class="btn btn-outline-primary">Agendar Cita</button>
+                                <button type="button" class="btn btn-outline-primary">Reagendar Cita</button>
+                                <button type="button" class="btn btn-outline-primary">Eliminar Cita</button>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="card service-link service-card service-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqBgBasPYPjeL4fIIE0mqai_tx6Sq-lMXhdA&s" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Pediatria Infantil</h5>
+                            <p class="card-text">Ofrecemos tratamientos ajustados a las necesidades de cada paciente.</p>
+                            <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                <button type="button" class="btn btn-outline-primary">Agendar Cita</button>
+                                <button type="button" class="btn btn-outline-primary">Reagendar Cita</button>
+                                <button type="button" class="btn btn-outline-primary">Eliminar Cita</button>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="card service-link service-card service-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvvXPN0ELesClsmJ0bsdjZeLjrdDElPOu12g&s" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Examenes de laboratorio</h5>
+                            <p class="card-text">Ofrecemos tratamientos ajustados a las necesidades de cada paciente.</p>
+                            <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                <button type="button" class="btn btn-outline-primary">Agendar Cita</button>
+                                <button type="button" class="btn btn-outline-primary">Reagendar Cita</button>
+                               <button type="button" class="btn btn-outline-primary">Eliminar Cita</button>
+                              </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!--creando una section para mostra el porque elegirnos como pagina web-->
+        <section id="por-que-elegirnos" class="py-5 bg-light">
+            <div class="container service-img service-link">
+                <h2 class="text-center mb-4">¿Por qué elegirnos?</h2>
+                <div class="row text-center ">
+                    <div class="col-md-4">
+                        <img src="img/experiencia.jpg" alt="Experiencia" class="img-fluid rounded-circle mb-3">
+                        <h4>Experiencia</h4>
+                        <p>Contamos con un equipo de médicos altamente capacitados con años de experiencia en el campo.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/tecnologia_avan.jpg" alt="Tecnología Avanzada" class="img-fluid rounded-circle mb-3">
+                        <h4>Tecnología Avanzada</h4>
+                        <p>Utilizamos equipos y técnicas de vanguardia para ofrecer el mejor diagnóstico y tratamiento.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvpPWBeiaR6FBMU1ZCMPDbVHKwcSzFNi5ngg&s" alt="Cuidado Personalizado" class="img-fluid rounded-circle mb-3">
+                        <h4>Cuidado Personalizado</h4>
+                        <p>Nuestro enfoque está en brindar un tratamiento adaptado a las necesidades de cada paciente.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--creando una section para consultas  que tendra un formulario para enviar dicha informacion-->
+        <section id="consulta" class="py-5" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOEqAaD2SLUxgT0MDhS4hktAPIX4buibc_bw&s'); background-size: cover; background-position: left;">
+            <div class="container">
+                <div class="row">
+                    <!-- Formulario -->
+                    <div class="col-md-6 d-flex align-items-center">
+                        <div class="p-5 bg-white rounded shadow-lg" style="box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);">
+                            <h2 class="text-center mb-4" style="font-family: 'Poppins', sans-serif; color: #333;">Formulario de Consulta</h2>
+                            <form>
+                                <!-- Campo Nombre -->
+                                <div class="mb-4">
+                                    <label for="nombre" class="form-label" style="font-weight: 600; color: #333;">Nombre Completo</label>
+                                    <input type="text" class="form-control border-light" id="nombre" placeholder="Ingresa tu nombre completo" required 
+                                           style="border-radius: 25px; box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1); padding: 15px;">
+                                </div>
+                                
+                                <!-- Campo Correo Electrónico -->
+                                <div class="mb-4">
+                                    <label for="email" class="form-label" style="font-weight: 600; color: #333;">Correo Electrónico</label>
+                                    <input type="email" class="form-control border-light" id="email" placeholder="Ingresa tu correo electrónico" required 
+                                           style="border-radius: 25px; box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1); padding: 15px;">
+                                </div>
+                                
+                                <!-- Campo Teléfono -->
+                                <div class="mb-4">
+                                    <label for="telefono" class="form-label" style="font-weight: 600; color: #333;">Número de Teléfono</label>
+                                    <input type="tel" class="form-control border-light" id="telefono" placeholder="Ingresa tu número de teléfono" required 
+                                           style="border-radius: 25px; box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1); padding: 15px;">
+                                </div>
+                                
+                                <!-- Campo Información Adicional -->
+                                <div class="mb-4">
+                                    <label for="informacion" class="form-label" style="font-weight: 600; color: #333;">Información Adicional</label>
+                                    <textarea class="form-control border-light" id="informacion" rows="4" placeholder="Escribe aquí cualquier información adicional que desees." required 
+                                              style="border-radius: 25px; box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1); padding: 15px;"></textarea>
+                                </div>
+                                
+                                <!-- Botón Enviar -->
+                                <button type="submit" class="btn btn-primary w-100" style="border-radius: 25px; padding: 12px 20px; font-weight: bold; 
+                                        background-color: #007bff; border-color: #007bff; transition: background-color 0.3s, border-color 0.3s;">
+                                    Enviar Consulta
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección para el video -->
+<section id="video-section" class="py-5 bg-light">
+    <div class="container text-center">
+        <h2 class="mb-4">Mira Nuestro Video</h2>
+        <p class="mb-4">Descubre más sobre nuestros servicios médicos y cómo podemos ayudarte a mantener tu salud en óptimas condiciones.</p>
+
+        <!-- Video embebido desde YouTube o archivo local -->
+        <div class="embed-responsive embed-responsive-16by9">
+            <!-- Si estás usando un video de YouTube -->
+            <iframe class="embed-responsive-item" src="img/video.mp4" allowfullscreen></iframe>
+
+            <!-- O si usas un archivo de video local -->
+            <!-- <video class="embed-responsive-item" controls>
+                <source src="video/tu-video.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video.
+            </video> -->
+        </div>
+    </div>
+</section>
+
+        
+        
+        
+            <!--creando el pie de pagina para la pagina web-->
+        <footer class="bg-dark text-white py-4">
+            <div class="container">
+                <div class="row">
+                    <!-- Texto de Derechos Reservados -->
+                    <div class="col-12 col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        <p class="mb-0">&copy; 2024 Dra. Angela Sarai Molina. Todos los derechos reservados.</p>
+                        <p class="mb-0">&copy; Diseñado por RRAMIREZ INTELLIGENCE</p>
+                    </div>
+                    
+                    <!-- Redes Sociales -->
+                    <div class="col-12 col-md-6 text-center text-md-end">
+                        <a href="https://www.facebook.com" class="text-white me-3" target="_blank" title="Facebook">
+                            <i class="fab fa-facebook fa-2x">
+                                <img src="img/fb.png" width="40px" height="40px" alt="facebook">DRA.ANGELA SARAI MOLINA
+                            </i>
+                        </a>
+                        <a href="https://www.instagram.com" class="text-white me-3" target="_blank" title="Instagram">
+                            <i class="fab fa-instagram fa-2x">
+                                <img src="img/ig.png" width="40px" height="40px" alt="instagram">DRA.ANGELA SARAI MOLINA
+                            </i>
+                        </a>
+                        <a href="https://twitter.com" class="text-white me-3" target="_blank" title="Twitter">
+                            <i class="fab fa-twitter fa-2x"><br>
+                                <img src="img/x.png" width="40px" height="40px" alt="Twitter">DRA.ANGELA SARAI MOLINA
+                            </i>
+                        </a>
+                        <a href="mailto:email@example.com" class="text-white" title="Email">
+                            <i class="fas fa-envelope fa-2x">
+                                <img src="img/gmail.png" width="40px" height="40px" alt="facebook">DRA.ANGELA SARAI MOLINA
+                            </i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
